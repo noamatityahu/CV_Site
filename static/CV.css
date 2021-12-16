@@ -1,0 +1,108 @@
+
+   
+body {
+    background-color: darkcyan;
+    color: white;
+}
+#GridContainer {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'left main main'
+    'left main main';
+    }
+    
+    div {
+        border: 2px solid white;
+    }
+    
+.item1{
+    grid-area: header;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(172, 231, 172, 0.856); 
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 30px; 
+    font-family:fantasy  
+
+}
+.item2{
+    grid-area: left;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(172, 231, 172, 0.856); 
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 30px;
+    font-family:fantasy
+}
+.item3{
+    grid-area: main;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(172, 231, 172, 0.856); 
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-size: 30px;
+    font-family:fantasy
+}
+.item4{
+    grid-area: main;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(172, 231, 172, 0.856); 
+
+    grid-column-start: 4;
+    grid-column-end: 4;
+    font-size: 30px;
+    font-family:fantasy
+}
+.item5{
+    grid-area: main;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(172, 231, 172, 0.856); 
+    
+    grid-column-start: 5;
+    grid-column-end: 5;
+    font-size: 30px;
+    font-family:fantasy
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h1{
+    text-align: center;
+    color:white;
+    font-family:fantasy;
+    font-size: 60px;
+    text-decoration:underline;
+
+
+    animation-name: blink;
+    animation-iteration-count: 5;
+    animation-duration: 1s;
+
+}
+
+@keyframes blink {
+    from {background-color: #66CDAA }
+    to {background-color: green}
+}
